@@ -1,0 +1,52 @@
+{
+  "name": "nexusmind-super-agent",
+  "version": "2.0.0",
+  "description": "Rick Jefferson's Limitless AI Agent System with Comprehensive Knowledge Base",
+  "author": "Rick Jefferson <rickjefferson@rickjeffersonsolutions.com>",
+  "license": "PROPRIETARY",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rjbizsolution23-wq/nexusmind-super-agent.git"
+  },
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "init-kb": "tsx scripts/init-knowledge-base.ts",
+    "test": "vitest",
+    "lint": "eslint . --ext .ts,.tsx",
+    "format": "prettier --write '**/*.{ts,tsx,json,md}'"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.20.0",
+    "@pinecone-database/pinecone": "^2.0.0",
+    "hono": "^4.0.0",
+    "openai": "^4.28.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240208.0",
+    "@types/node": "^20.11.0",
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.0",
+    "wrangler": "^3.28.0"
+  },
+  "keywords": [
+    "ai-agent",
+    "knowledge-base",
+    "vector-search",
+    "rag",
+    "llm",
+    "openai",
+    "anthropic",
+    "pinecone",
+    "cloudflare-workers",
+    "nextjs",
+    "typescript",
+    "research-assistant",
+    "code-search",
+    "auto-citation"
+  ]
+}
